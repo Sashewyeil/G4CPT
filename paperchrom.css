@@ -1,0 +1,343 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.school-logo {
+    height: 60px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.school-name {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.school-name span {
+    line-height: 1.2;
+}
+
+.group-info {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #A1EF8B;
+    margin-top: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #A1EF8B;
+    color: #333;
+}
+
+/* Sub-menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #A1EF8B;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #444;
+}
+
+/* Active Link Styling */
+.nav-links li.active a {
+    background-color: #A1EF8B;
+    color: #333;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+.intro {
+    background-color: #F4F8FB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content, .right-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.right-content {
+    padding-top: 50px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.content ul {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.content li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.procedure ol {
+    font-size: 1.1rem;
+    color: #555;
+    margin-left: 40px;
+    line-height: 1.8;
+}
+
+/* Section Backgrounds */
+.intro-section {
+    background-color: #A1EF8B;
+    color: #333;
+}
+
+.procedure {
+    background-color: #ffeb3b;
+}
+
+.results {
+    background-color: #c8e6c9;
+}
+
+.conclusion {
+    background-color: #fff59d;
+}
+
+/* Data Table Styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.data-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Discussion Section Styling */
+.discussion, .conclusion, .application, .introduction {
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.discussion, .introduction {
+    background-color: #f0f4f8;
+}
+
+.conclusion {
+    background-color: #f9f9f9;
+}
+
+.application {
+    background-color: #eef8f2;
+}
+
+.discussion h2, .conclusion h2, .application h2, .introduction h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.discussion-text, .conclusion-text, .application-text, .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.highlighted-text, .highlighted-intro {
+    background-color: #ffffe0; /* Light yellow background */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center; /* Centers the text */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff0000; /* Red color for "Key Insight" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlighted-text p, .highlighted-intro p {
+    margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .right-content {
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+
+    .section-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .discussion-text, .conclusion-text, .application-text, .intro-text {
+        font-size: 1rem;
+    }
+
+    .highlighted-text, .highlighted-intro {
+        font-size: 1.1rem;
+    }
+}

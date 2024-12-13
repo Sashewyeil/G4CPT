@@ -1,0 +1,224 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    height: 100%; /* Ensure the body takes full height */
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.school-logo {
+    height: 70px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.school-name {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.school-name span {
+    line-height: 1.2;
+}
+
+/* Group Info */
+.group-info {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #A1EF8B;
+    margin-top: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #A1EF8B;
+    color: #333;
+}
+
+/* Sub-menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #A1EF8B;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #444;
+}
+
+/* Active Link Styling */
+.nav-links li.active a {
+    background-color: #A1EF8B;
+    color: #333;
+}
+
+/* Video Background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  object-fit: cover;
+  transform: scale(1.5);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 0; /* Remove any extra margin from the top */
+}
+
+.hero-content {
+  color: white;
+  text-align: left;
+  padding: 50px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 
+    1px 1px 0 rgba(0, 0, 0, 5),
+    -1px -1px 0 rgba(0, 0, 0, 5),
+    1px -1px 0 rgba(0, 0, 0, 5),
+    -1px 1px 0 rgba(0, 0, 0, 5);
+  position: relative;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
